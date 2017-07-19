@@ -77,5 +77,3 @@ jobs:
     params:
       manifest: pal-tracker/ci/deployments/manifest-production.yml
       path: pal-tracker-artifacts/pal-tracker-*.jar
-      environment_variables:
-        WELCOME_MESSAGE: "Hello from the production environment"
