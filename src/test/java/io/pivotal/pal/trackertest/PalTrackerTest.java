@@ -40,8 +40,7 @@ public class PalTrackerTest {
     public void setUp() throws Exception {
         DataSource dataSource = new MariaDbDataSource(System.getenv("SPRING_DATASOURCE_URL"));
 
-        RestTemplateBuilder builder = new RestTemplateBuilder();
-        builder
+        RestTemplateBuilder builder = new RestTemplateBuilder()
             .rootUri("http://localhost:" + port)
             .basicAuthorization("user", "password");
 
